@@ -7,3 +7,21 @@
     border: solid 1px #888;
     background-color: #DDD8C4;
   }
+h1{
+  color:aqua;
+  font-size: 120%;
+}
+p{
+  font-family: "comic sans";
+  text-indent: 20px;
+  margin-left: 10px;
+}
+#content{
+  background-color: #0011ff;
+  width: 500px;
+  min-height: 300px;
+  padding: 10px;
+  margin:10px;
+  border:solid 1px #99a0ff;
+  font-size: 20px;
+}
