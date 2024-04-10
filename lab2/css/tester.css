@@ -1,0 +1,73 @@
+/* Here we can set styles for this lab page that we don't want to effect others pages */
+
+/* the period in a CSS selector selects an element by class, e.g., class="minor-section" */
+.minor-section {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: solid 1px #888;
+    background-color: #DDD8C4;
+  }
+#Ian,#Christine{
+  border: solid 2px purple;
+  padding: 5px;
+  margin: 20px;
+}
+h1{
+  color:aqua;
+  font-size: 120%;
+}
+p{
+  font-family: "comic sans";
+  text-indent: 20px;
+  margin-left: 10px;
+}
+#content{
+  text-align: center;
+  background-color: #3b3f7b;
+  width: 1000px;
+  min-height: 300px;
+  padding: 10px;
+  margin:10px;
+  border:solid 1px #99a0ff;
+  font-size: 20px;
+  max-height: 100vh;
+  overflow: auto;
+}
+body {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  min-height: 100vh; /* Full viewport height */
+}
+
+/* tester.css  chatGPT helping with styles*/
+ul.text-messages {
+    list-style: none;
+    padding: 10px;
+    background-color: #f2f2f2; /* Light grey background */
+    width: 300px; /* Fixed width */
+    margin: 0 auto; /* Center the list */
+    border-radius: 10px; /* Rounded corners for the container */
+}
+ul.text-messages li {
+    background-color: #0084ff; 
+    color: white; /* White text color */
+    padding: 5px;
+    margin: 5px 0; /* Space between messages */
+    border-radius: 20px; /* Rounded corners for messages */
+    max-width: 80%; /* Max width for each message */
+    word-wrap: break-word; /* Ensure text breaks to avoid horizontal overflow */
+}
+/* Align messages to the right */
+ul.text-messages li.sent {
+    margin-left: auto;
+    background-color: #0084ff; /* Different color for sent messages */
+}
+img {
+  width: 100px; /* Specify the width */
+  height: 100px; /* Specify the height to match the width for a perfect circle */
+  border-radius: 50%; /* This creates the circular shape */
+  border: 2px solid #ddd; /* Optional: Adds a light border around the image */
+  object-fit: cover; /* Ensures the image covers the area without distorting its aspect ratio */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow for depth */
+}
