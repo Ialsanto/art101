@@ -1,6 +1,50 @@
-/* this css file will only style the homepage of our site */
+this css file will only style the homepage of our site
+/* Here we can set styles for this lab page that we don't want to effect others pages */
 
-.cat-photo {
-  margin: 10px;
-  max-width: 500px;
+/* the period in a CSS selector selects an element by class, e.g., class="minor-section" */
+.minor-section {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: solid 1px #888;
+  background-color: #DDD8C4;
+}
+#Ian{
+border: solid 2px purple;
+padding: 5px;
+margin: 20px;
+}
+h1{
+color:aqua;
+font-size: 120%;
+}
+p{
+font-family: "comic sans";
+text-indent: 20px;
+margin-left: 10px;
+}
+#content{
+text-align: center;
+background-color: #3b3f7b;
+width: 1000px;
+min-height: 300px;
+padding: 10px;
+margin:10px;
+border:solid 1px #99a0ff;
+font-size: 20px;
+max-height: 100vh;
+overflow: auto;
+}
+body {
+display: flex;
+justify-content: center; /* Center horizontally */
+align-items: center; /* Center vertically */
+min-height: 100vh; /* Full viewport height */
+}
+img {
+width: 100px; /* Specify the width */
+height: 100px; /* Specify the height to match the width for a perfect circle */
+border-radius: 50%; /* This creates the circular shape */
+border: 2px solid #ddd; /* Optional: Adds a light border around the image */
+object-fit: cover; /* Ensures the image covers the area without distorting its aspect ratio */
+box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow for depth */
 }
