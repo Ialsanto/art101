@@ -7,3 +7,18 @@
     border: solid 1px #888;
     background-color: #DDD8C4;
   }
+#fileStructure{
+  width: 30%;
+  height: auto;
+}
+
+ul {
+  list-style-type: none; /* Removes default list styling */
+  margin: 0; /* Removes default margin */
+  padding: 0; /* Removes default padding */
+  text-align: right; /* Aligns content to the right */
+}
+
+ul li {
+  display: inline; /* Displays list items in a line */
+}
