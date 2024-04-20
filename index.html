@@ -12,9 +12,10 @@
 	<!-- Include a sitewide CSS file for consistent styling across the site -->
 	<link rel="stylesheet" type="text/css" href="css/site.css">
 	<!-- Lab-specifc CSS file for any special styling of this particular page -->
-	<link rel="stylesheet" type="text/css" href="css/homepage.css">
+	<!-- <link rel="stylesheet" type="text/css" href="css/homepage.css"> -->
 	<!-- Link to javascript file - DEFER waits until all elements are rendered -->
-
+	<!-- my own stylecss called personalized.css -->
+	<link rel="stylesheet" type="text/css" href="css/personalized.css">
 	<!-- <script type="text/javascript" src="./js/lab.js" DEFER></script> -->
 </head>
 <body>
@@ -23,14 +24,18 @@
 		<section>
 			<h1>Ians Homepage!</h1>
 			<div class="minor-section">
-					<!-- Note that all filenames use lowercase and no spaces -->
-					<div id="Ian">
-						<img class="homepage-image" src="./img/me.jpg"/>
-						<h3>About me</h3> 
-						<p>Hello, I am a 4th year trying to get my B.S in Computer Science Major.
-							Fun fact I have 4 younger brothers. I love to play video games and also enjoy playing soccer</p>
-					</div>
-			</div>
+                <div id="Ian" class="flex-container">
+                    <div>
+                        <img class="homepage-image" src="./img/me.jpg" alt="Image of Ian"/>
+                    </div>
+                    <div class="text-content">
+                        <h3>About me</h3>
+                        <p>
+							Hello, I am a 4th year trying to get my B.S in Computer Science Major.
+                            Fun fact I have 4 younger brothers. I love to play video games and also enjoy playing soccer. If you can't find me in my room coding or playing video games, you may find me at the gym lifting some weights.
+                            If you don't find me there, you will find me somewhere quiet reading about fintech.</p>
+                    </div>
+                </div>
 
 		</section>
 		<nav id="links">

@@ -1,0 +1,65 @@
+/* this is my personalized style for my hompage for lab 3 going the extra step */
+
+.minor-section {
+    padding: 5px;
+    margin-bottom: 5px;
+    border: solid 1px #888;
+    background-color: #949491;
+  }
+  
+  #Ian {
+    padding: 10px;
+    margin: 100px;
+  }
+  
+  h1 {
+    color: rgb(0, 0, 0);
+    font-size: 200%;
+    font-family: monospace;
+  }
+  
+  p {
+    font-family: monospace;
+    text-indent: 20px;
+    margin-left: 10px;
+  }
+  
+  #content {
+    background-color: #f0f0f0; /* Light grey background */
+    color: #333; /* Dark grey text for general code */
+    border-left: 5px solid #8b8b8b; /* Grey border on the left */
+    padding: 10px; /* Padding inside the code block */
+    font-family: 'Courier New', monospace; /* Monospace font for code style */
+    text-align: left;
+  }
+  
+  body {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    min-height: 100vh; /* Full viewport height */
+  }
+  
+  .homepage-image {
+    width: 200px; /* Specify the width */
+    height: 300px; /* Specify the height to match the width for a perfect circle */
+    border: 2px solid #ffffff; /* Optional: Adds a light border around the image */
+    object-fit: cover; /* Ensures the image covers the area without distorting its aspect ratio */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow for depth */
+  }
+  
+  ul {
+    list-style-type: none;
+  }
+  .flex-container {
+    display: flex; /* Enable flex layout */
+    align-items: flex-start; /* Align items to the start of the flex container vertically */
+    justify-content: center; /* Center items horizontally within the container */
+    width: 100%;
+    gap: 20px; 
+  }
+  
+  .text-content {
+    max-width: 600px; /* Max width for readability */
+  }
+  
