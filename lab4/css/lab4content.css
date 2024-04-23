@@ -1,0 +1,55 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: row;
+}
+
+.container {
+    display: flex;
+    flex: 1;
+    padding: 10px;
+}
+
+.task, .code, .psuedocode {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    overflow: auto;
+    flex: 1;
+}
+
+.task-title, .psuedocode-title {
+    font-size: 20px;
+    color: #444;
+    margin-bottom: 10px;
+}
+
+.steps, .psuedocode ul {
+    margin: 0;
+    padding: 0 0 0 20px;
+    list-style-type: none;
+}
+
+.steps li, .psuedocode li {
+    line-height: 1.5;
+    position: relative;
+}
+
+.steps li::before, .psuedocode li::before {
+    color: #888;
+    position: absolute;
+    left: 0;
+}
+
+pre {
+    background-color: #fafafa;
+    border: 1px solid #ddd;
+    padding: 10px;
+    overflow: auto;
+}
