@@ -3,18 +3,31 @@
 // Date:
 
 // Constants
-
+let make, model, color, year,ownIt,age;
+year = 2007
+make = "Honda"
+model = "Civic"
+color = "black"
+ownIt = false
+age = 2024 - year;
 // Functions
 
 // this is an example function and this comment tells what it doees and what parameters are passed to it.
-function myFunction(param1, param2) {
-  // some code here
-  // return results;
-}
+function myFunction(year,make,model,color,ownIt,age) 
+{
+  document.writeln("Make: " + make + "<br>");
 
-function main() {
-  console.log("Main function started.");
-  // the code that makes everything happen
+  document.writeln("Model: " + model + "<br>");
+
+  document.writeln("Color: " + color + "<br>");
+
+  document.writeln ("Year: " + year + "<br>");
+
+  document.writeln("Age: " + age + " years<br>");
+}
+function main() 
+{
+  myFunction(year,make,model,color,ownIt,age)
 }
 
 // let's get this party started

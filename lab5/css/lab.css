@@ -7,3 +7,36 @@
     border: solid 1px #888;
     background-color: #DDD8C4;
   }
+.honda-civic
+{
+  position:relative;
+  height:25%;
+  width: 25%;
+}
+h1{
+color:red;
+font-size: 120%;
+}
+p{
+font-family: "comic sans";
+text-indent: 20px;
+margin-left: 10px;
+}
+#content{
+text-align: center;
+background-color: #3b3f7b;
+width: 1000px;
+min-height: 300px;
+padding: 10px;
+margin:10px;
+border:solid 1px #99a0ff;
+font-size: 20px;
+max-height: 100vh;
+overflow: auto;
+}
+body {
+display: flex;
+justify-content: center; /* Center horizontally */
+align-items: center; /* Center vertically */
+min-height: 100vh; /* Full viewport height */
+}
