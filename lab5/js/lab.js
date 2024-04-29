@@ -24,6 +24,8 @@ function myFunction(year,make,model,color,ownIt,age)
   document.writeln ("Year: " + year + "<br>");
 
   document.writeln("Age: " + age + " years<br>");
+  
+  document.writeln("owner: " + ownIt + "<br>");
 }
 function main() 
 {
