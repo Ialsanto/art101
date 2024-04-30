@@ -1,24 +1,31 @@
-// index.js - purpose and description here
-// Author: Your Name
-// Date:
+// lab.js - expirementing with functions 
+// Author: Ian Santos
+// Date: 04/29/2024
 
 // Constants
-const myTransport = ["Car","Bus","Train","Scooter"];
+
 
 //my ride object with a function
-let myMainRide = { 
-  make: "Toyota",
-  model: "camry", 
-  color:"black",
-  year:2014,
-  age: function(){
-    return 2024 - this.year
+function getName(){
+  let name = prompt("Please enter your name", "Harry Potter");
+  let arrayOfName;
+  if(name!=null){
+    arrayOfName = name.split('');
+    return arrayOfName.sort();
   }
-};
+ 
+  return "you didnt give me a good name !!!!";
+
+  }
 
 function main() {
-  document.writeln("My Main Ride: <pre>", 
-    JSON.stringify(myMainRide, null, '\t'), "</pre>");
+  let currName = getName();
+  if(currName){
+    document.getElementById("output").innerHTML ="Hello " + currName + "! How are you today?";
+  }
+  else{
+    console.log("error")
+  }
 }
 
 // let's get this party started

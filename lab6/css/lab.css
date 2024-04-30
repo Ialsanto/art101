@@ -5,10 +5,13 @@
     padding: 10px;
     margin-bottom: 10px;
     border: solid 1px #888;
-    background-color: #DDD8C4;
+    background-color: #a4b3f7;
   }
   .images img {
     max-width: 30%;
     height: auto;
     border-radius: 8px;
+}
+#content{
+  background-color: #888;
 }
