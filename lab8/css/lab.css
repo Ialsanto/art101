@@ -7,33 +7,23 @@
     border: solid 1px #888;
     background-color: #DDD8C4;
   }
-  #content{
-    background-color: #888;
-  }
-  .minor-section {
-    padding: 10px;
-    margin-bottom: 10px;
-    border: solid 10px #000000;
-    background-color: #b380ff;
-  }
-  
+
   /* chat bot css */
   #nametag {
     background-color: white; /* Classic white background */
     border: 20px solid red; /* Red border typical of these stickers */
     color: black; /* Name text color */
-    width: 550px;
-    padding: 10px;
+    width: 250px;
+    padding: 15px;
     border-radius: 5px; /* Mildly rounded corners */
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
     text-align: center; /* Center text alignment */
-    text-transform: uppercase;
     font-family: 'Arial', sans-serif; /* Simple, clear font */
     margin: 100px auto; /* Center the nametag horizontally on the page */
 }
 
 #greeting {
-    font-size: 20px;
+    font-size: 14px;
     color: red; /* Red color for the greeting */
     margin-bottom: 5px; /* Space between the greeting and the name */
 }
@@ -43,3 +33,11 @@
     font-weight: bold; /* Bold for emphasis */
 }
 
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f4; /* Neutral background to highlight the nametag */
+}

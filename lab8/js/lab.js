@@ -6,28 +6,25 @@
 
 //will store the original name given for future refrence 
 let originalName='';
+
 //prompts for users name
 function getName(){
   let name = window.prompt("Please enter your name", "Jon Snow?");
   originalName = name;
   let arrayOfName;
   let newname='';
-  //checks if you gave me a real name 
   if(name != '')
   {
-    //this will split and make an array of the name given 
     arrayOfName = name.split(' ');
-    console.log(arrayOfName) //prints array to console
-    //for loop looping through the array starting at 0 and going to whatever size the array is 
+    console.log(arrayOfName)
     for (let i = 0; i < arrayOfName.length; i++){
-      console.log(i);//shows the what i is 
-      console.log(arrayOfName[i]);//the value at that location checkout your web browser console while on lab7 link
-      //new name becomes the sorted name 
-      newname = newname+""+arrayOfName[i].split('').sort().join('');
-      console.log(newname);
+      console.log(i);
+      console.log(arrayOfName[i]);
+      newname = newname+" "+arrayOfName[i].split('').reverse();
     }
     return newname;   
   }
+ 
   return -1;
 }
 
