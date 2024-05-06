@@ -1,52 +1,61 @@
-// lab.js - expirementing with functions 
+// lab.js - callbacks
 // Author: Ian Santos
-// Date: 04/29/2024
+// Date: 05/02/2024
 
 // Constants
-
-//will store the original name given for future refrence 
-let originalName='';
-
-//prompts for users name
-function getName(){
-  let name = window.prompt("Please enter your name", "Jon Snow?");
-  originalName = name;
-  let arrayOfName;
-  let newname='';
-  if(name != '')
-  {
-    arrayOfName = name.split(' ');
-    console.log(arrayOfName)
-    for (let i = 0; i < arrayOfName.length; i++){
-      console.log(i);
-      console.log(arrayOfName[i]);
-      newname = newname+" "+arrayOfName[i].split('').reverse();
-    }
-    return newname;   
-  }
- 
-  return -1;
+function printMe(x){
+  console.log(x)
 }
+function calculation(x)
+{
+  return x/1000+ "    ";
+};
 
+function avg(x){
+  return x-7
+}
 function main() {
-  let currName = getName();
+  let number = [0,1,2,3,4,5,6,7,8,10,10,1,20,23,2]
+  
+  numsandword = ['hello',1,'testing',2,'what','if',3];
+  numsandword.map(printMe);
+  console.log(calculation(1000));
+  console.log(calculation(100));
+  console.log(calculation(10));
 
-  var nametag = document.createElement('div');
-  nametag.id = 'nametag';
-  var hello = document.createElement('div');
-  hello.id = 'hello';
-  var name = document.createElement('div');
-  name.id = 'name';
-  if(currName!=-1){
-    document.getElementById("output").innerHTML = "Hello your name sorted is " + currName;
-    hello.innerHTML = "hello";
-    name.innerHTML = originalName
-    document.getElementById('output').appendChild(nametag).appendChild(hello);
-    document.getElementById('output').appendChild(nametag).appendChild(name);
-  }
-  else{
-    document.getElementById("output").innerHTML = "Really?? refresh and give me a better name";
-  }
+  console.log(numsandword.map(calculation));
+
+  numsandword.map(function(x){return x+200;})
+
+  let mappedResults = numsandword.map(calculation);
+  let mapresults = number.map(avg);
+  console.log(mappedResults)
+  $("#output").before("Original array1 = ["+number.toString()+"]")
+
+  $("#output").html("after mapping = "+mappedResults.toString());
+  $("#output2").html("2nd mapping function "+mapresults.toString());
+  
+  $("#output2").after("<button id='myButton'>click me</button>");
+
+  $( "#myButton" ).on( "click", function() {
+    $( "#hidden" ).show( 10000, function() {
+      $( this ).text( "Ok, DONE!" );});
+  } );
+
+  // $("#output2").after( "button" ).on( "click", doIt );
+ 
+  $( "form" ).on( "submit", function( event ) {
+    if ( $( "input" ).val() === "yes" ) {
+      $( "p" ).show( 4000, function() {
+        $( this ).text( "Ok, DONE! (now showing)" );
+      } );
+    }
+    $( "span,div" ).hide( "fast" );
+  
+    // Prevent form submission
+    event.preventDefault();
+  } );
+
 }
 
 // let's get this party started

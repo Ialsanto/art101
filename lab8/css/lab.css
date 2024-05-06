@@ -41,3 +41,89 @@ body {
     margin: 0;
     background-color: #f4f4f4; /* Neutral background to highlight the nametag */
 }
+
+/* Reset default browser styles */
+html, body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+  }
+  
+  #content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+  
+  h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+  }
+  
+  .minor-section {
+    margin-bottom: 30px;
+  }
+  
+  /* Style links */
+  a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Navigation */
+  nav {
+    background-color: #333;
+    padding: 10px 20px;
+    color: #fff;
+    text-align: center;
+  }
+  
+  nav a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .labLinks ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .labLinks ul li {
+    display: inline;
+    margin-right: 10px;
+  }
+  
+  .minor-section {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: solid 1px #888;
+    background-color: #a4b3f7;
+  }
+  .images img {
+    max-width: 30%;
+    height: auto;
+    border-radius: 8px;
+}
+#content{
+  background-color: #888;
+}
