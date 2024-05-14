@@ -1,6 +1,6 @@
-// lab.js - callbacks
+// lab.js - JavaScript for the Web
 // Author: Ian Santos
-// Date: 05/02/2024
+// Date: 05/14/2024
 
 // Constants
 function generateRandomText() {
@@ -14,18 +14,24 @@ function generateRandomText() {
   return text.slice(randStart, randStart + randLen);
 }
 // click listener for button
-
+function textDecider(index){
+  if(index % 2 === 0){
+    let userIn = prompt("message: ");
+    $("#output").append('<div id="text'+index+'"><p>' + userIn + '</p></div>');
+  }
+  else{
+    const newText = generateRandomText();
+    // append a new div to our output div
+    $("#output").append('<div id="text'+index+'"><p>' + newText + '</p></div>');
+  }
+ 
+}
 function main() {
   let index = 0;
   //lab 10 button listener 
   $("#make-convo").click(function(){
-    // get new fake dialogue
-
-    const newText = generateRandomText();
-    // append a new div to our output div
-    $("#output").append('<div id="text'+index+'"><p>' + newText + '</p></div>');
-   
-  
+    //get input at the given index 
+    textDecider(index);
     let currentSelector = $('#text' + index);
     if (index % 2 === 0) {
       // If even, change the inner HTML to "wow"
@@ -34,8 +40,6 @@ function main() {
     index += 1;
     console.log('Current index: ' + index);
   });
-  
-
 }
 // let's get this party started
 main();

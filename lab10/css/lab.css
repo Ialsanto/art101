@@ -127,11 +127,11 @@ html, body, h1, h2, p, ul, li {
   background-color: #888;
 }
 .special {
-  background-color: #ff0000; 
-  color: #000000; 
-  border: 2px solid #004365;
+  background-color: #2200ff; 
+  color: #e7e7e7; 
+  border: 2px solid #70cfff;
   font-weight: bold;
   padding: 5px;
   border-radius: 5px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-}
+  margin-left: 100px;}
