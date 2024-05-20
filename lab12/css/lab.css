@@ -1,0 +1,137 @@
+/* Here we can set styles for this lab page that we don't want to effect others pages */
+
+/* the period in a CSS selector selects an element by class, e.g., class="minor-section" */
+.minor-section {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: solid 1px #888;
+    background-color: #DDD8C4;
+  }
+  /* chat bot css */
+#nametag {
+    background-color: white; /* Classic white background */
+    border: 20px solid red; /* Red border typical of these stickers */
+    color: black; /* Name text color */
+    width: 250px;
+    padding: 15px;
+    border-radius: 5px; /* Mildly rounded corners */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    text-align: center; /* Center text alignment */
+    font-family: 'Arial', sans-serif; /* Simple, clear font */
+    margin: 100px auto; /* Center the nametag horizontally on the page */
+}
+
+#greeting {
+    font-size: 14px;
+    color: red; /* Red color for the greeting */
+    margin-bottom: 5px; /* Space between the greeting and the name */
+}
+
+#name {
+    font-size: 22px; /* Larger font size for the name */
+    font-weight: bold; /* Bold for emphasis */
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f4; /* Neutral background to highlight the nametag */
+}
+
+/* Reset default browser styles */
+html, body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+  }
+  
+  #content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+  
+  h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+  }
+  
+  .minor-section {
+    margin-bottom: 30px;
+  }
+  
+  /* Style links */
+  a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Navigation */
+  nav {
+    background-color: #333;
+    padding: 10px 20px;
+    color: #fff;
+    text-align: center;
+  }
+  
+  nav a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .labLinks ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .labLinks ul li {
+    display: inline;
+    margin-right: 10px;
+  }
+  
+  .minor-section {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: solid 1px #888;
+    background-color: #a4b3f7;
+  }
+  .images img {
+    max-width: 30%;
+    height: auto;
+    border-radius: 8px;
+}
+#content{
+  background-color: #888;
+}
+.special {
+  background-color: #fafafa; 
+  color: #000000; 
+  border: 2px solid #ccc;
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
