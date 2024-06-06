@@ -37,16 +37,6 @@ function fizzbuzz(max,con1,con2,con3)
 function main() 
 {
     fizzbuzz();
- 
-  $("#submit").click(function(){
-    // get value of input field
-    const userName = $("#user-input").val();
-    console.log("hello");
-    // now let's sort it
-    whichHouse = sortingHat(userName);
-    // append a new div to our output div
-    $("#output").html('<div class="text"><p> The Sorting Hat has sorted you into ' + whichHouse + '</p></div>');
-  });
   // $("#submitAna").click(function(){
   //   const userName = $("#user-name").val();
   //   userNameAnagram = anagram(userName);

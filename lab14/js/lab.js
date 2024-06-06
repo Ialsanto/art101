@@ -2,59 +2,43 @@
 // Author: Ian Santos
 // Date: 05/24/2024
 
-function fizzbuzz(max,con1,con2,con3)
-{
+function fizzbuzz(max = 200, con1 = 3, con2 = 5, con3 = 7) {
 
-  // print all the numbers from 1 to 120.
-  for (let i = 1; i <= 120; i++) {
+  let oneLongString = "";
+
+  // print all the numbers from 1 to max.
+  for (let i = 1; i <= max; i++) {
       
       let str = "";
 
-      if(((i % 3 == 0) && (i % 5 == 0)) || ((i % 3 == 0) &&(i % 7 == 0)) ||((i % 5 == 0) && (i % 7 == 0))){
-        str+="FizzBuzz"
-      }
-      if (i % 3 == 0) {
+      if (i % con1 == 0) {
         str += "Fizz";
       }
-      if (i % 5 == 0) {
+      if (i % con2 == 0) {
         str += "Buzz";
       }  
-      if (i % 7 == 0) {
+      if (i % con3 == 0) {
         str += "Boom";
       }
       if (str == "") {
         console.log(i);
-        $("#output").append("<p class='num'>" + i);
+        oneLongString += "<p class='num'>" + i + "</p>";
       } else {
         console.log(str + '!');
-        $("#output").append("<p class='text'>" + str + '!');
+        oneLongString += "<p class='text'>" + str + '!</p>';
       }
       
-    }
+  }
+
+  // Output the result to the #output div
+  $("#output").html(oneLongString);
 }
+
 // Constants
 
-function main() 
-{
+function main() {
     fizzbuzz();
- 
-  $("#submit").click(function(){
-    // get value of input field
-    const userName = $("#user-input").val();
-    console.log("hello");
-    // now let's sort it
-    whichHouse = sortingHat(userName);
-    // append a new div to our output div
-    $("#output").html('<div class="text"><p> The Sorting Hat has sorted you into ' + whichHouse + '</p></div>');
-  });
-  // $("#submitAna").click(function(){
-  //   const userName = $("#user-name").val();
-  //   userNameAnagram = anagram(userName);
-  //   $("#output").html('<div class="anagram"><p>' + userNameAnagram + '</p></div>');
-  //   console.log(userNameAnagram);
-  // })
-
-
 }
+
 // let's get this party started
-main();
+$(document).ready(main);
