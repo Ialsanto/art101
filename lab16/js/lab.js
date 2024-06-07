@@ -1,58 +1,53 @@
 // lab.js - for loops
 // Author: Ian Santos
-// Date: 05/24/2024
+// Date: 05/6/2024
 
-function fizzbuzz(max,con1,con2,con3)
-{
-
-  // print all the numbers from 1 to 120.
-  for (let i = 1; i <= 120; i++) {
-      
-      let str = "";
-
-      if(((i % 3 == 0) && (i % 5 == 0)) || ((i % 3 == 0) &&(i % 7 == 0)) ||((i % 5 == 0) && (i % 7 == 0))){
-        str+="FizzBuzz"
-      }
-      if (i % 3 == 0) {
-        str += "Fizz";
-      }
-      if (i % 5 == 0) {
-        str += "Buzz";
-      }  
-      if (i % 7 == 0) {
-        str += "Boom";
-      }
-      if (str == "") {
-        console.log(i);
-        $("#output").append("<p class='num'>" + i);
-      } else {
-        console.log(str + '!');
-        $("#output").append("<p class='text'>" + str + '!');
-      }
-      
-    }
-}
+// {
+//   "month": "7",
+//   "num": 614,
+//   "link": "",
+//   "year": "2009",
+//   "news": "",
+//   "safe_title": "Woodpecker",
+//   "transcript": ...
+//   "img": "https://imgs.xkcd.com/comics/woodpecker.png",
+//   "title": "Woodpecker",
+//   "day": "24"
+//   }
 // Constants
+
+function fetchDetails(comicNumber, resultDiv) {
+  $.ajax({
+      url: `https://xkcd.com/${comicNumber}/info.0.json `,
+      method: 'GET',
+      success: function(data) {
+          const imgLink = data.img;
+          const title = data.tilte;
+          const year = data.year;
+          resultDiv.html(`
+              <h2>Title ${title}, ${year}</h2>
+              <img src="${imgLink}" alt="${title}">
+          `);
+      },
+      error: function() {
+          resultDiv.html('Failed to fetch Pokémon details.');
+      }
+  });
+}
 
 function main() 
 {
-    fizzbuzz();
- 
-  $("#submit").click(function(){
-    // get value of input field
-    const userName = $("#user-input").val();
-    console.log("hello");
-    // now let's sort it
-    whichHouse = sortingHat(userName);
-    // append a new div to our output div
-    $("#output").html('<div class="text"><p> The Sorting Hat has sorted you into ' + whichHouse + '</p></div>');
+  $(document).ready(function() {
+    $('#comicNumber').on('submit', function(event) {
+      event.preventDefault(); // Prevent the form from submitting the traditional way
+      const tempNum = $('#user-input').val();
+      const resultDiv = $('#output');
+      console.log("hello")
+      fetchDetails(tempNum, resultDiv);
+    });
   });
-  // $("#submitAna").click(function(){
-  //   const userName = $("#user-name").val();
-  //   userNameAnagram = anagram(userName);
-  //   $("#output").html('<div class="anagram"><p>' + userNameAnagram + '</p></div>');
-  //   console.log(userNameAnagram);
-  // })
+
+
 
 
 }
